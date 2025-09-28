@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>КубГУ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header id="site-header">
+        <div class="container">
+            <img src="logo.png"
+                 alt="Логотип КубГУ" class="logo">
+            <div class="site-title">Кубанский государственный университет</div>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav id="main-nav">
+        <div class="container">
+            <a href="#main">Главная</a>
+            <a href="#links">Ссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#forma">Форма</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="main">
+            <h1>Маркированный список гиперсылок</h1>
+            <ul id="links">
+                <li><a href="http://kubsu.ru/">КубГУ (http)</a></li>
+                <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png"
+                         alt="Логотип КубГУ"
+                         width="100"
+                         height="100">
+                </li>
+                <li><a href="forma.html">На внутреннюю страницу (форма регистрации)</a></li>
+                <li><a href="#main">На главную страницу</a></li>
+                <li><a href="#forma">На фрагмент текущей страницы (форма регистрации)</a></li>
+                <li><a href="https://www.google.com/search?q=КубГУ&num=1&hl=ru">С тремя параметрами</a></li>
+                <li><a href="https://www.kubsu.ru/ru/user/74102">С параметром id (Создатель сайта)</a></li>
+                <li><a href="otnos.html">Относительная ссылка</a></li>
+                <li><a href="about/about.html">Относительная на страницу в каталоге about</a></li>
+                <li><a href="../higher.html">Относительная на главную страницу уровнем выше</a></li>
+                <li><a href="../../higher2.html">Относительная двумя уровнями выше</a></li>
+            </ul>
+
+            <!-- Контекстная ссылка в тексте абзаца -->
+            <p>
+                Кубанский государственный университет является одним из ведущих вузов Юга России.
+                Более подробную информацию можно найти на
+                <a href="https://kubsu.ru/ru/university" target="_blank">официальной странице университета</a>.
+            </p>
+
+            <p>
+                Также рекомендуем ознакомиться с
+                <a href="https://kubsu.ru/ru/education" target="_blank">образовательными программами</a>
+                и
+                <a href="https://kubsu.ru/ru/abiturient" target="_blank">информацией для абитуриентов</a>.
+            </p>
+
+            <ul>
+                <li><a href="https://github.com/lolopopikop">На фрагмент стороннего сайта</a></li>
+                <li>
+                    ссылки из прямоугольных и круглых областей картинки (map):<br>
+                    <img src="map.svg" alt="карта изображения" width="100%" style="max-width: 320px; height: auto;" usemap="#m">
+                    <map name="m">
+                        <area shape="rect" coords="20,20,140,80" href="https://kubsu.ru" alt="Переход на kubsu.ru">
+                        <area shape="circle" coords="230,80,36" href="https://github.com" alt="Переход на GitHub">
+                    </map>
+                </li>
+                <li><a href="">Пустая ссылка</a></li>
+                <li>Ссылка без href</li>
+                <li><a href="https://kubsu.ru/" rel="nofollow">КубГУ (запрещен переход поисковикам)</a></li>
+            </ul>
+
+            <h1>Нумерованный список ссылок</h1>
+
+            <ol>
+                <li><a href="http://kubsu.ru/" title="Официальный сайт КубГУ по протоколу HTTP">КубГУ (http)</a></li>
+                <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ по защищенному протоколу HTTPS">КубГУ (https)</a></li>
+                <li><a href="#forma" title="Переход к форме регистрации на этой странице">На внутреннюю страницу (форма регистрации)</a></li>
+                <li><a href="#main" title="Вернуться к началу главной страницы">На главную страницу</a></li>
+                <li><a href="#forma" title="Переход к форме регистрации в пределах текущей страницы">На фрагмент текущей страницы (форма регистрации)</a></li>
+                <li><a href="https://www.google.com/search?q=КубГУ&num=1&hl=ru" title="Поиск информации о КубГУ в Google с ограничением результатов">С тремя параметрами</a></li>
+                <li><a href="https://www.kubsu.ru/ru/user/74102" title="Профиль создателя сайта на платформе КубГУ">С параметром id (Создатель сайта)</a></li>
+            </ol>
+
+            <li><a href="ftp://username:password@ftp.example.com/path/to/file.txt">Ссылка на файл на FTP сервере</a></li>
+        </section>
+
+        <!-- Таблица -->
+        <section id="table">
+            <h2>Таблица факультетов КубГУ</h2>
+            <table id="university-table">
+                <tr>
+                    <th>Факультет</th>
+                    <th>Специальность</th>
+                    <th>Количество мест</th>
+                    <th>Проходной балл</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Математики и компьютерных наук</td>
+                    <td>Прикладная математика</td>
+                    <td>25</td>
+                    <td>245</td>
+                </tr>
+                <tr>
+                    <td>Компьютерная безопасность</td>
+                    <td>30</td>
+                    <td>260</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Филологический</td>
+                    <td>Русская филология</td>
+                    <td>40</td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>Журналистика</td>
+                    <td>20</td>
+                    <td>255</td>
+                </tr>
+                <tr>
+                    <td>Экономический</td>
+                    <td>Экономика</td>
+                    <td>50</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>Юридический</td>
+                    <td>Правоведение</td>
+                    <td>35</td>
+                    <td>270</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Форма -->
+        <section id="forma">
+            <h2>Форма регистрации</h2>
+
+            <form action="/" method="POST" class="contact-form">
+                <label>
+                    Введите ваше ФИО:<br />
+                    <input name="field-name-1" placeholder="Фамилия Имя Отчество" />
+                </label><br />
+
+                <label>
+                    Ваш номер телефона:<br />
+                    <input name="field-phone" placeholder="+7(___)___ __ __" />
+                </label><br />
+
+                <label>
+                    Ваш email:<br />
+                    <input name="field-email" type="email" placeholder="example@gmail.com" />
+                </label><br />
+
+                <label>
+                    Ваша дата рождения:<br />
+                    <input name="field-date" value="2000-01-01" type="date" />
+                </label><br />
+
+                <div class="radio-group">
+                    Ваш пол:<br />
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Мужской" />
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group-1" value="Женский" />
+                        Женский
+                    </label><br />
+                </div>
+
+                <label>
+                    Ваш любимый язык программирования:
+                    <br />
+                    <select name="field-name-4[]" multiple="multiple">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C" selected="selected">C</option>
+                        <option value="C++" selected="selected">C++</option>
+                        <option value="C#" selected="selected">C#</option>
+                        <option value="JavaScript" selected="selected">JavaScript</option>
+                        <option value="PHP" selected="selected">PHP</option>
+                        <option value="Python" selected="selected">Python</option>
+                        <option value="Java" selected="selected">Java</option>
+                        <option value="Haskel" selected="selected">Haskel</option>
+                        <option value="Prolog" selected="selected">Prolog</option>
+                        <option value="Scala" selected="selected">Scala</option>
+                        <option value="Go" selected="selected">Go</option>
+                        <option value="Rust" selected="selected">Rust</option>
+                    </select>
+                </label><br />
+
+                <label>
+                    Ваша биография:<br />
+                    <textarea name="field-name-2"></textarea>
+                </label><br />
+
+                <div class="checkbox-group">
+                    Контракт:<br />
+                    <label>
+                        <input type="checkbox" checked="checked" name="check-1" />
+                        С контрактом ознакомлен(a)
+                    </label>
+                </div><br />
+
+                <input type="submit" value="Сохранить" />
+            </form>
+        </section>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer id="site-footer">
+        <div class="container">
+            <p>(c) Охремчук Виктор</p>
+        </div>
+    </footer>
+</body>
+</html>

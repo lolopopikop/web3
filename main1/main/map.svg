@@ -1,0 +1,7 @@
+<svg width="320" height="160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="320" height="160" fill="#eee" stroke="#ccc"/>
+  <rect x="20" y="20" width="120" height="60" fill="#a0d8ff" opacity="0.8"/>
+  <circle cx="230" cy="80" r="36" fill="#cccccc" opacity="0.8"/>
+  <text x="80" y="60" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">КубГУ</text>
+  <text x="230" y="85" font-family="Arial" font-size="14" text-anchor="middle">github</text>
+</svg>

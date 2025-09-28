@@ -1,0 +1,316 @@
+/* Mobile First стили */
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Шапка сайта */
+#site-header {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+#site-header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Навигационное меню - вертикальный список для мобильных */
+#main-nav {
+    width: 100%;
+    background-color: #00509e;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+#main-nav .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+#main-nav a:last-child {
+    border-bottom: none;
+}
+
+#main-nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Основной контент */
+#main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* На мобильных: таблица выше списка ссылок */
+#links {
+    order: 2;
+}
+
+#table {
+    order: 1;
+}
+
+#forma {
+    order: 3;
+}
+
+/* Таблица */
+#university-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+#university-table th,
+#university-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#university-table th {
+    background-color: #003366;
+    color: white;
+}
+
+#university-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#university-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Форма */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Стили для радиокнопок и чекбоксов */
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row-reverse;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Подвал сайта */
+#site-footer {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для списков и ссылок */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #00509e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Отступы между секциями */
+section {
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media Query для планшетов (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    #site-header .container {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .site-title {
+        font-size: 24px;
+    }
+    
+    #main-nav .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #main-nav a {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-bottom: none;
+        font-size: 18px;
+    }
+    
+    /* На планшетах возвращаем обычный порядок */
+    #links, #table, #forma {
+        order: 0;
+    }
+    
+    #main-content {
+        flex-direction: column;
+    }
+    
+    #university-table {
+        font-size: 16px;
+    }
+    
+    #university-table th,
+    #university-table td {
+        padding: 12px;
+    }
+}
+
+/* Media Query для десктопов (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    /* На десктопах тоже все в колонку, форма снизу */
+    #main-content {
+        flex-direction: column;
+    }
+
+    #links, #table, #forma {
+        width: 100%;
+    }
+    
+    .contact-form button {
+        width: auto;
+    }
+}
+
+/* Дополнительные исправления для мобильных */
+@media screen and (max-width: 767px) {
+    #university-table {
+        font-size: 12px;
+    }
+    
+    #university-table th,
+    #university-table td {
+        padding: 6px 4px;
+    }
+    
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .site-title {
+        font-size: 18px;
+    }
+}
